@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thomas Dupont · Portfolio</title>
+<style>
+  :root { --bg:#F6F7F4; --fg:#1B2433; --muted:#566274; --card:#FFFFFF; --line:#D5DBE3; --accent:#2A5BD7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0F1B2D; --fg:#EAF0F7; --muted:#A9B6C7; --card:#16253B; --line:#2A3B55; --accent:#7FA6FF; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
+  header, section, footer { max-width:860px; margin:0 auto; padding:48px 20px; }
+  nav { display:flex; gap:20px; flex-wrap:wrap; padding:16px 20px; max-width:860px; margin:0 auto; border-bottom:1px solid var(--line); }
+  nav a { color:var(--fg); text-decoration:none; font-weight:600; }
+  nav a:hover { color:var(--accent); }
+  h1 { font-size:clamp(2rem,6vw,3.2rem); line-height:1.1; margin:0 0 12px; }
+  h2 { font-size:1.6rem; margin:0 0 16px; }
+  .lead { color:var(--muted); font-size:1.15rem; max-width:55ch; }
+  .btn { display:inline-block; margin-top:16px; padding:12px 22px; background:var(--accent); color:#fff; border-radius:8px; text-decoration:none; font-weight:600; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px; }
+  .card h3 { margin:0 0 8px; font-size:1.1rem; }
+  .card p { margin:0; color:var(--muted); }
+  ul.plain { padding-left:20px; margin:0; }
+  footer { color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#parcours">Parcours</a>
+  <a href="#projets">Projets</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header id="accueil">
+  <h1>Thomas Dupont</h1>
+  <p class="lead">Étudiant en BTS CIEL, option informatique et réseaux. Je m'intéresse à l'administration systèmes, aux réseaux et à la cybersécurité.</p>
+  <a class="btn" href="#contact">Me contacter</a>
+</header>
+
+<section id="parcours">
+  <h2>Parcours</h2>
+  <div class="grid">
+    <div class="card"><h3>2025 – 2027 · BTS CIEL</h3><p>Cybersécurité, informatique et électronique. Lycée à compléter.</p></div>
+    <div class="card"><h3>2024 · Baccalauréat</h3><p>Série ou spécialités à compléter.</p></div>
+    <div class="card"><h3>Compétences</h3>
+      <ul class="plain"><li>Réseaux (adressage IP, VLAN)</li><li>Linux et Windows Server</li><li>HTML, CSS, WordPress</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="projets">
+  <h2>Projets</h2>
+  <div class="grid">
+    <div class="card"><h3>Site portfolio</h3><p>Création d'un site WordPress en local, puis mise en ligne sur GitHub Pages.</p></div>
+    <div class="card"><h3>Réseau d'un petit bureau</h3><p>Plan d'adressage, configuration d'un routeur et d'un commutateur.</p></div>
+    <div class="card"><h3>Serveur web local</h3><p>Installation d'Apache, PHP et MariaDB avec UwAmp.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Écrivez-moi : <a href="mailto:prenom.nom@exemple.fr" style="color:var(--accent)">prenom.nom@exemple.fr</a></p>
+</section>
+
+<footer>© 2026 Thomas Dupont · Site réalisé en BTS CIEL</footer>
+</body>
+</html>
